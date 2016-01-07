@@ -1,0 +1,62 @@
+*{font-family: "微软雅黑";}
+body{
+	padding-top: 70px;
+	background-color: whitesmoke;
+}
+.navbarContaner{
+	z-index: 10000;
+}
+.navbar{
+	border-radius: 0;
+	box-shadow: 0 3px 5px #333333;
+}
+.fixed-top{
+	position: fixed;width: 100%;top: 0;
+}
+.pannel-intro{
+	text-align: center;
+	margin: auto;
+}
+.controlLabel{
+	width: 33.5%;
+	float: left;
+	text-align: center;
+	border-right:1px solid #CCCCCC ;
+}
+.controlSwitch{
+	text-align: center;
+}
+.panel-inverse{
+	border:1px solid rgb(52,73,94);
+}
+.panel-inverse .panel-heading{
+	background-color: rgb(52,73,94);
+	color: white;
+}
+.panel-inverse .panel-body{
+	border-bottom: 1px solid rgb(52,73,94);
+	padding: 5px;
+}
+.panel-body span{
+	font-size: 0.6em;
+	text-align: center;
+	display: block;
+	margin: auto;
+	color: darkred;
+}
+th{
+	font-size: 0.9em;
+	font-weight: 700;
+	border-left:1px solid #CCCCCC ;
+	text-align: center;
+}
+th:first{
+	border: none;
+}
+li{
+	font-size: 0.9em;
+}
+#cpuInfo{
+	font-size: 0.9em;
+	padding: 10px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+        	作者：457754603@qq.com
+        	时间：2016-01-07
+        	描述：Xcoder 
+        -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>中控</title>
+		<!--css-->
+		<link rel="stylesheet" href="FlatUI/css/vendor/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="FlatUI/css/flat-ui.min.css" />
+		<link rel="shortcut icon" href="FlatUI/img/icons/png/Clipboard.png"/>
+		<link rel="stylesheet" href="css/layCss.css" />
+	</head>
+	<body>
+		<!--navbarContaner-->
+		<div class="navbarContaner fixed-top">
+			<nav class="navbar navbar-inverse" role="navigation" >
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+			      <span class="sr-only">Toggle navigation</span>
+			    </button>
+			    <a class="navbar-brand" href="#">中控面板</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="navbar-collapse-01">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="#">继电器控制</a></li>
+			      <li><a href="">唤醒/关机</a></li>
+			      <li><a href="">机器状态</a></li>
+			    </ul>
+			  </div><!-- /.navbar-collapse -->
+			</nav><!-- /navbar -->
+		</div><!-- /navbarContaner -->
+		
+		<!--继电器-->
+		<div class="container">
+			<div class="row col-sm-8 col-sm-offset-2">
+				
+				<div class="panel panel-inverse">
+					<div class="panel-heading">
+						继电器控制
+						<select class="form-control select select-primary select-sm" data-toggle="select" id="">
+							<optgroup label="选择bord">
+							</optgroup>
+				        </select>
+					</div>
+					<div class="panel-body">
+					   	<p class="pannel-intro">控制继电器的开关</p>
+					   	<span>"ON"开启/"OFF"关闭</span>
+					</div>
+					<table style="width: 100%;">
+						<tr>
+							<th>设备名称</th>
+							<th>当前状态</th>
+							<th>操作开关</th>
+						</tr>
+					</table>
+					<ul class="list-group">
+				   </ul>
+				</div>
+			</div>
+		</div><!-- /继电器 -->
+		
+		<!--唤醒-->
+		<div class="container">
+			<div class="row col-sm-8 col-sm-offset-2">
+				<div class="panel panel-inverse">
+					<div class="panel-heading">
+						唤醒/关机
+					</div>
+					<div class="panel-body">
+					   	<p class="pannel-intro">控制继电器的开关</p>
+					   	<span>"唤醒"唤醒设备/"关机"关闭设备</span>
+					</div>
+					<table style="width: 100%;">
+						<tr>
+							<th>设备名称</th>
+							<th>当前状态</th>
+							<th>操作开关</th>
+						</tr>
+					</table>
+					<ul class="list-group">
+				      <!--<li class="list-group-item">
+				      	<div class="controlLabel"><span>继电器</span><span>1</span></div>
+				      	<div class="controlLabel"><span>未开启</span></div>
+				      	<div class="controlSwitch"><input type="checkbox" checked data-toggle="switch" name="default-switch" data-on-text="唤醒" data-off-text="关闭" id="switch-01" /></div>
+				      </li>-->
+				   </ul>
+				</div>
+			</div>
+		</div><!-- /唤醒 -->
+		
+		<!--机器状态-->
+		<div class="container">
+			<div class="row col-sm-8 col-sm-offset-2">
+				<div class="panel panel-inverse">
+					<div class="panel-heading">
+						机器状态
+					</div>
+					<div class="panel-body">
+					   	<p class="pannel-intro">显示当前设备运行状态</p>
+					</div>
+					<div id="cpuInfo"></div>
+				</div>
+			</div>
+		</div><!-- /机器状态 -->
+		
+		<!--mian js-->
+		<script type="text/javascript" src="FlatUI/js/vendor/jquery.min.js" ></script>
+		<script type="text/javascript" src="FlatUI/js/flat-ui.min.js" ></script>
+		<script type="text/javascript" src="js/Application.js" ></script>
+	</body>
+</html>
