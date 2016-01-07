@@ -1,0 +1,21 @@
+http://:12032
+
+command relay
+board 1-n
+relay 1-6
+onoff 1 on 0
+
+全开  relay 26 onoff1
+全关  relay 28 onoff1
+
+唤醒 
+command wakeup
+machine
+
+关机
+command shutdown
+machine 
+
+机器状态
+command getSys
+machine
