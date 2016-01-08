@@ -28,24 +28,28 @@
 			  <div class="collapse navbar-collapse" id="navbar-collapse-01">
 			    <ul class="nav navbar-nav">
 			      <li class="active"><a href="#">继电器控制</a></li>
-			      <li><a href="">唤醒/关机</a></li>
-			      <li><a href="">机器状态</a></li>
+			      <li><a href="#">唤醒/关机</a></li>
+			      <li><a href="#">机器状态</a></li>
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav><!-- /navbar -->
 		</div><!-- /navbarContaner -->
 		
 		<!--继电器-->
-		<div class="container">
+		<div class="container" id="relayContain">
 			<div class="row col-sm-8 col-sm-offset-2">
 				
 				<div class="panel panel-inverse">
 					<div class="panel-heading">
 						继电器控制
-						<select class="form-control select select-primary select-sm" data-toggle="select" id="">
-							<optgroup label="选择bord">
-							</optgroup>
-				        </select>
+						<select class="form-control select select-primary select-sm select-block mbl" id="boardSelect" style="margin-bottom: 5px;">
+								<optgroup label="选择要控制的继电器板">
+								</optgroup>
+							</select>
+						<div style="display: inline-block;">
+							<button class="btn btn-danger btn-sm" id="shutAll">全部关闭</button>
+							<button class="btn btn-success btn-sm" id="openAll">全部开启</button>
+						</div>
 					</div>
 					<div class="panel-body">
 					   	<p class="pannel-intro">控制继电器的开关</p>
@@ -58,14 +62,14 @@
 							<th>操作开关</th>
 						</tr>
 					</table>
-					<ul class="list-group">
+					<ul class="list-group" id="relayUL">
 				   </ul>
 				</div>
 			</div>
 		</div><!-- /继电器 -->
 		
 		<!--唤醒-->
-		<div class="container">
+		<div class="container" id="machineContain" style="display: none;">
 			<div class="row col-sm-8 col-sm-offset-2">
 				<div class="panel panel-inverse">
 					<div class="panel-heading">
@@ -82,23 +86,26 @@
 							<th>操作开关</th>
 						</tr>
 					</table>
-					<ul class="list-group">
-				      <!--<li class="list-group-item">
-				      	<div class="controlLabel"><span>继电器</span><span>1</span></div>
-				      	<div class="controlLabel"><span>未开启</span></div>
-				      	<div class="controlSwitch"><input type="checkbox" checked data-toggle="switch" name="default-switch" data-on-text="唤醒" data-off-text="关闭" id="switch-01" /></div>
-				      </li>-->
+					<ul class="list-group" id="machineBoard">
 				   </ul>
 				</div>
 			</div>
 		</div><!-- /唤醒 -->
 		
 		<!--机器状态-->
-		<div class="container">
+		<div class="container" id="stateContain" style="display: none;">
 			<div class="row col-sm-8 col-sm-offset-2">
 				<div class="panel panel-inverse">
 					<div class="panel-heading">
 						机器状态
+						<div style="display: inline-block;">
+							<select class="form-control select select-primary select-sm select-block mbl" id="machineSelect" style="margin-bottom: 5px;">
+								<optgroup label="选择要查看的设备">
+								</optgroup>
+							</select>
+							<button class="btn btn-warning btn-sm" id="refreshBtn">刷新</button>
+						</div>
+						
 					</div>
 					<div class="panel-body">
 					   	<p class="pannel-intro">显示当前设备运行状态</p>

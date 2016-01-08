@@ -1,0 +1,16 @@
+{
+	"switch":[
+		[
+			{"id":"1","state":"off"},
+			{"id":"2","state":"off"}
+		],
+		[
+			{"id":"1","state":"off"},
+			{"id":"2","state":"off"}
+		]
+	],
+	"euip":[
+		{"id":"test","state":"off"},
+		{"id":"test2","state":"off"}
+	]
+}

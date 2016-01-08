@@ -25,6 +25,8 @@ body{
 }
 .controlSwitch{
 	text-align: center;
+	float: right;
+	width: 30%;
 }
 .panel-inverse{
 	border:1px solid rgb(52,73,94);
@@ -55,6 +57,12 @@ th:first{
 }
 li{
 	font-size: 0.9em;
+}
+li:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
 }
 #cpuInfo{
 	font-size: 0.9em;
